@@ -1,11 +1,24 @@
 <html>
 <body>
 
+<script>
+    $(document).ready(function{
+
+
+
+    })
+
+</script>
+
+
 <form method="post">
-    <input name="1octeto">
-    <input name="2octeto">
-    <input name="3octeto">
-    <input name="4octeto">
+    <input type="number" name="1octeto">
+    .
+    <input type="number" name="2octeto">
+    .
+    <input type="number" name="3octeto">
+    .
+    <input type="number" name="4octeto">
     /
     <input name="bits">
     <input type="submit" value="Calcular">
