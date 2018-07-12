@@ -43,13 +43,28 @@ echo $ult_end ." e ";
 $masc_dec= 256-$enderecos;
 echo $masc_dec ." e ";
 
+if ($oc4 <= 126){
+    echo "classe a";
+}
 
-//classe
-//if($oc1 >= 1 AND $oc1 <= 126){
-//    echo "classe A";
-//}elseif($oc1 >= 128 AND $oc1 <= 191){
-//    echo "classe B";
-//}elseif($oc1 >= 192 AND $oc1 <= 223){
-//    
-//}
+if ($oc4 >= 128 AND $oc4 <= 191){
+    echo "classe b";
+}
+
+
+if ($oc4 >= 192 AND $oc4 <= 223){
+    echo "classe c";
+
+
+}
+
+if ($oc4 >= 224 AND $oc4 <= 239){
+    echo "classe d";
+
+}
+
+if ($oc4 >= 240 AND $oc4 <= 256){
+    echo "classe e";
+
+}
 
