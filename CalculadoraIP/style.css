@@ -1,0 +1,18 @@
+#formulario{
+    position:absolute;
+    margin-left: 22%;
+    width:50%;
+
+}
+
+#resultados{
+    align-content: center;
+border: 5px solid black;
+
+}
+h1{
+    margin-left: 450px;
+}
+p{
+    color:green;
+}

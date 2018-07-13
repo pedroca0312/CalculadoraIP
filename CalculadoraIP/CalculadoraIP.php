@@ -35,44 +35,51 @@ $ult_end=$broadcast -1;
 //mascara de rede em decimal
 $masc_dec= 256-$enderecos;
 
+
+echo " <h4>Resultado do endereço IP</h4> ";
+
+
+if($oc1==10 and $oc2>=0 and $oc2 <=255 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
+    echo "<ul><li>Ip privado</li></ul>";
+}
+elseif($oc1==172 and $oc2>=16 and $oc2 <=31 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
+    echo "<ul><li>Ip privado</li></ul>";
+}
+elseif($oc1==192 and $oc2==168 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
+    echo "<ul><li>Ip privado</li></ul>";
+}else{
+    echo "<ul><li>Ip público</li></ul>";
+}
+
+
 if ($oc4 <= 126){
-    echo "<br>Classe A<br>";
+    echo "<ul><li>Classe A</li></ul>";
 }
 
 elseif ($oc4 >= 128 AND $oc4 <= 191){
-    echo "<br>Classe B<br>";
+    echo "<ul><li>Classe B</li></ul>";
 }
 
 
 elseif ($oc4 >= 192 AND $oc4 <= 223){
-    echo "<br>Classe C<br>";
+    echo "<ul><li>Classe C</li></ul>";
 
 
 }
 
 elseif ($oc4 >= 224 AND $oc4 <= 239){
-    echo "<br>Classe D<br>";
+    echo "<ul><li>Classe D</li></ul>";
 
 }
 
 elseif($oc4 >= 240 AND $oc4 <= 256){
-    echo "<br>Classe E<br>";
+    echo "<ul><li>Classe E</li></ul>";
 
 }else{
     echo "Não possui classe e é privado.";
 }
 
-if($oc1==10 and $oc2>=0 and $oc2 <=255 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
-    echo "Ip privado";
-}
-elseif($oc1==172 and $oc2>=16 and $oc2 <=31 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
-    echo "Ip privado";
-}
-elseif($oc1==192 and $oc2==168 and $oc3>=0 and $oc3<=255 and $oc4>=0 and $oc4<=255){
-    echo "Ip privado";
-}else{
-    echo "Ip público";
-}
+
 
 echo "<ul><li>Quantidade de endereços em cada sub-rede: ".$enderecos."</li>";
 echo "<li>Quantidade de sub redes: ".$sub_redes."</li>";
@@ -82,3 +89,4 @@ echo "<li>Endereço de host: ".$host."</li>";
 echo "<li>Endereço de broadcast: ".$broadcast."</li>";
 echo "<li>Último endereço de host: ".$ult_end."</li>";
 echo "<li>Máscara de rede em decimal: ".$masc_dec."</li></ul>";
+echo "<p>Alunos: Sarah Hoegen e Pedro Henrique   3info3</p>";
